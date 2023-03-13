@@ -8,7 +8,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 // Import roadmap
 import Image from '@theme/IdealImage';
-import roadmap from './../../static/img/png/week4-roadmap.png';
+import bannerImg from './../../static/img/png/roundup/feb.png';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -19,10 +19,11 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         */}
-        <h3> #30DaysOfSWA - It's Best Practices Week! </h3>
-        <Link to="/blog/tags/best-practices">
-          <Image img={roadmap} className={styles.featureImg} />
+        <h3> #ThisMonthInSWA - Feb 2023! </h3>
+        <Link to="thismonth/roundup-2023-feb">
+          <Image img={bannerImg} className={styles.featureImg} />
         </Link>
+        <h5>Click the image to read the latest issue!</h5>
       </div>
     </header>
   );
@@ -41,7 +42,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Welcome to the Azure Static Web Apps community site.">
       <main>
         <HomepageHeader />
         <HomepageFeatures />
